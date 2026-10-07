@@ -1,0 +1,1 @@
+{"name":"prompt-manufaktur","private":true,"type":"module","scripts":{"build":"node worker/build.mjs","deploy":"npm run build && wrangler deploy","dev":"npm run build && wrangler dev"},"devDependencies":{"wrangler":"^4.0.0"}}

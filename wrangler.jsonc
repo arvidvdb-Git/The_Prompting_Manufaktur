@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "prompt-manufaktur",
+  "main": "worker/worker.js",
+  "compatibility_date": "2026-10-07",
+  "assets": { "directory": "./public", "binding": "ASSETS", "run_worker_first": ["/api/*", "/auth/*"] },
+  "kv_namespaces": [{ "binding": "SESSIONS", "id": "REPLACE_WITH_KV_NAMESPACE_ID" }],
+  "vars": {
+    "PUBLIC_ORIGIN": "https://REPLACE_WITH_WORKER_OR_CUSTOM_DOMAIN",
+    "ALLOWED_USER_ID": "REPLACE_WITH_NUMERIC_GITHUB_USER_ID",
+    "ALLOWED_LOGIN": "REPLACE_WITH_YOUR_GITHUB_LOGIN",
+    "REPO_OWNER": "REPLACE_WITH_PRIVATE_REPOSITORY_OWNER",
+    "REPO_NAME": "REPLACE_WITH_PRIVATE_REPOSITORY_NAME"
+  }
+}
